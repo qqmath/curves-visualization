@@ -9,12 +9,11 @@ import streamlit as st
 This interactive article demonstrates different types of spirals using Streamlit.
 
 **Cardioid Spiral**
-
+The Cardioid spiral resembles a heart shape, and you can adjust the number of points and turns to explore it.
 """
 
-st.write('The Cardioid spiral resembles a heart shape, and you can adjust the number of points and turns to explore it.')
 
-st.write('# Interactive widget for adjusting the parameters of the Cardioid spiral')
+# Interactive widget for adjusting the parameters of the Cardioid spiral
 with st.echo(code_location='below'):
     # Slider to control the number of points in the Cardioid spiral
     total_points = st.slider("Number of points in Cardioid spiral", 1, 5000, 2000)
