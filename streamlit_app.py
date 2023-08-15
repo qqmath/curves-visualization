@@ -1,5 +1,5 @@
 # Introduction and description of the interactive article
-st.write("""
+st.write('
 # Spiral Visualization with Streamlit
 
 This interactive article demonstrates different types of spirals using Streamlit.
@@ -7,7 +7,7 @@ This interactive article demonstrates different types of spirals using Streamlit
 **Cardioid Spiral**
 
 The Cardioid spiral resembles a heart shape, and you can adjust the number of points and turns to explore it.
-""")
+')
 
 # Interactive widget for adjusting the parameters of the Cardioid spiral
 with st.echo(code_location='below'):
