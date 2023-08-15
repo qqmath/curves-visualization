@@ -136,9 +136,9 @@ with st.echo(code_location='below'):
         .encode(x='x:Q', y='y:Q'))
 
 # Description of Fermat's spiral
-st.write('**Fermat's Spiral**')
+st.write('**Fermat Spiral**')
 
-st.write('Fermat's spiral is a beautiful spiral with unique characteristics, and you can explore it by adjusting the number of points and turns.')
+st.write('Fermat spiral is a beautiful spiral with unique characteristics, and you can explore it by adjusting the number of points and turns.')
 
 # Interactive widget for adjusting the parameters of Fermat's spiral
 with st.echo(code_location='below'):
