@@ -1,5 +1,4 @@
-# Introduction and description of the interactive article
-st.write('# Spiral Visualization with Streamlit')
+# Spiral Visualization with Streamlit
 st.write('This interactive article demonstrates different types of spirals using Streamlit.')
 
 st.write('**Cardioid Spiral**')
