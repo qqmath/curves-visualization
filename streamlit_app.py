@@ -66,7 +66,7 @@ with st.echo(code_location='below'):
 # Description of the Trochoid spiral
 st.write('**Trochoid Spiral**')
 
-st.write('The Trochoid spiral consists of two circles, and you can experiment with different angle and radius multipliers to observe the spiral's behavior.')
+st.write('The Trochoid spiral consists of two circles, and you can experiment with different angle and radius multipliers to observe its behavior.')
 
 # Interactive widget for adjusting the parameters of the Trochoid spiral
 with st.echo(code_location='below'):
