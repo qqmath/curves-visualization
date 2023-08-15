@@ -1,7 +1,16 @@
-# Spiral Visualization with Streamlit
-st.write('This interactive article demonstrates different types of spirals using Streamlit.')
+from collections import namedtuple
+import altair as alt
+import math
+import pandas as pd
+import streamlit as st
 
-st.write('**Cardioid Spiral**')
+"""
+## Spiral Visualization with Streamlit
+This interactive article demonstrates different types of spirals using Streamlit.
+
+**Cardioid Spiral**
+
+"""
 
 st.write('The Cardioid spiral resembles a heart shape, and you can adjust the number of points and turns to explore it.')
 
@@ -33,9 +42,12 @@ with st.echo(code_location='below'):
         .mark_circle(color='#0068c9', opacity=0.5)
         .encode(x='x:Q', y='y:Q'))
 
-# Description of the Astroid spiral
-st.write('**Astroid Spiral.** The Astroid spiral resembles a star shape, and you can customize its appearance by adjusting the number of points and turns.')
-st.write('# Interactive widget for adjusting the parameters of the Astroid spiral')
+"""
+**Astroid Spiral.** 
+The Astroid spiral resembles a star shape, and you can customize its appearance by adjusting the number of points and turns.
+Check interactive widget for adjusting the parameters of the Astroid spiral.
+
+"""
 with st.echo(code_location='below'):
     # Slider to control the number of points in the Astroid spiral
     total_points2 = st.slider("Number of points in Astroid spiral", 1, 10000, 2000, key=2)
@@ -62,10 +74,12 @@ with st.echo(code_location='below'):
         .mark_circle(color='#0068c9', opacity=0.5)
         .encode(x='x:Q', y='y:Q'))
 
-# Description of the Trochoid spiral
-st.write('**Trochoid Spiral**')
+"""
+**Trochoid Spiral**
 
-st.write('The Trochoid spiral consists of two circles, and you can experiment with different angle and radius multipliers to observe its behavior.')
+The Trochoid spiral consists of two circles, and you can experiment with different angle and radius multipliers to observe its behaviour.
+
+"""
 
 # Interactive widget for adjusting the parameters of the Trochoid spiral
 with st.echo(code_location='below'):
@@ -100,10 +114,11 @@ with st.echo(code_location='below'):
         .mark_circle(color='#0068c9', opacity=0.5)
         .encode(x='x:Q', y='y:Q'))
 
-st.write('# Description of the Archimedean spiral')
-st.write('**Archimedean Spiral**')
+"""
+**Archimedean Spiral**
 
-st.write('The Archimedean spiral is another interesting type of spiral that can be adjusted using different parameters.')
+The Archimedean spiral is another interesting type of spiral that can be adjusted using different parameters.
+"""
 
 # Interactive widget for adjusting the parameters of the Archimedean spiral
 with st.echo(code_location='below'):
@@ -134,10 +149,13 @@ with st.echo(code_location='below'):
         .mark_circle(color='#0068c9', opacity=0.5)
         .encode(x='x:Q', y='y:Q'))
 
-# Description of Fermat's spiral
-st.write('**Fermat Spiral**')
 
-st.write('Fermat spiral is a beautiful spiral with unique characteristics, and you can explore it by adjusting the number of points and turns.')
+"""
+**Fermat's Spiral**
+
+Fermat's spiral is a beautiful spiral with unique characteristics, and you can explore it by adjusting the number of points and turns.
+
+"""
 
 # Interactive widget for adjusting the parameters of Fermat's spiral
 with st.echo(code_location='below'):
