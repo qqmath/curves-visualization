@@ -125,7 +125,7 @@ with st.echo(code_location='below'):
     # Slider to control the number of points in the Archimedean spiral
     total_points4 = st.slider("Number of points in Archimedean spiral", 1, 10000, 2000, key=8)
     # Slider to control the number of turns in the Archimedean spiral
-    num_turns4 = st.slider("Number of turns in Archimedean spiral", 1, 100, 15, key=9)
+    num_turns4 = st.slider("Number of turns in Archimedean spiral", 1, 100, 11, key=9)
     # Number input to control the radius increment in the Archimedean spiral
     radius_increment = st.number_input("Radius increment in Archimedean spiral", value=0.1, step=0.01, key=10)
 
@@ -162,7 +162,7 @@ with st.echo(code_location='below'):
     # Slider to control the number of points in Fermat's spiral
     total_points5 = st.slider("Number of points in Fermat's spiral", 1, 10000, 2000, key=11)
     # Slider to control the number of turns in Fermat's spiral
-    num_turns5 = st.slider("Number of turns in Fermat's spiral", 1, 100, 10, key=12)
+    num_turns5 = st.slider("Number of turns in Fermat's spiral", 1, 100, 11, key=12)
     # Number input to control the spiral constant in Fermat's spiral
     spiral_constant = st.number_input("Spiral constant in Fermat's spiral", value=0.1, step=0.01, key=13)
 
@@ -181,7 +181,7 @@ with st.echo(code_location='below'):
         y = radius5 * math.sin(angle5)
         data.append(Point(x, y))
 
-    # Display Fermat's spiral using Altair chart
+    # Display Fermat's spiral using the Altair chart
     st.altair_chart(alt.Chart(pd.DataFrame(data), height=500, width=500)
         .mark_circle(color='#0068c9', opacity=0.5)
         .encode(x='x:Q', y='y:Q'))
